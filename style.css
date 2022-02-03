@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Outfit-reg;
+    src: url(./fonts/Outfit-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: Outfit-med;
+    src: url(./fonts/Outfit-Medium.woff2) format('woff2');
+}
+@font-face {
+    font-family: Outfit-bold;
+    src: url(./fonts/Outfit-Bold.woff2) format('woff2');
+}
+@font-face {
+    font-family: Outfit-lit;
+    src: url(./fonts/Outfit-Light.woff2) format('woff2');
+}
+@font-face {
+    font-family: Outfit-exLit;
+    src: url(./fonts/Outfit-ExtraLight.woff2) format('woff2');
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: Outfit-lit;
+    background-image: url("./images/background.png");
+    background-size: 120rem 12rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.menu{
+    font-family: Outfit-lit;
+    font-size: 1.25rem;
+    margin-left: auto;
+    word-spacing: 1rem;
+    margin-left: 50rem;
+}
+
+.intro{
+    margin-left: 2rem;
+    max-width: 30rem;
+    line-height: 2.3rem;
+    font-size: 2rem;
+}
+
+.name{
+    font-family: Outfit-bold;
+}
+
+.intro-more{
+    font-size: 1.2rem;
+    margin-top: 3rem;
+    max-width: 30rem;
+    margin-left: 2rem;
+}
+
+.projects-content{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20rem;
+}
+
+.proj-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.project-1, .project-2, .project-3, .project-4{
+    border-radius: 1.5rem;
+    padding: 1rem;
+    width: 50rem;
+    height: 15rem;
+    background-color: beige;
+}
+
+.project-1{
+    background-color: #E3F6F9;
+}
+.project-2{
+    background-color: #EBE3D5;
+}
+.project-3{
+    background-color: #FFF5E4;
+}
+.project-4{
+    background-color: #E2EFDE;
+}
+
+.proj-imgs{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    top: 2.75%;
+    left: 65%;
+}
+
+.proj-title, .proj-intro{
+    margin-left: 2rem;
+}
+
+.proj-title{
+    font-family: Outfit-reg;
+    margin-top: 3rem;
+    font-size: 2rem;
+}
+.proj-intro{
+    font-family: Outfit-exLit;
+    max-width: 30rem;
+    font-size: 1.3rem;
+}
