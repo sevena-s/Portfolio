@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Outfit-reg;
+    src: url(../fonts/Outfit-Regular.woff2) format('woff2');
+}
+@font-face {
+    font-family: Outfit-med;
+    src: url(../fonts/Outfit-Medium.woff2) format('woff2');
+}
+@font-face {
+    font-family: Outfit-bold;
+    src: url(../fonts/Outfit-Bold.woff2) format('woff2');
+}
+@font-face {
+    font-family: Outfit-lit;
+    src: url(../fonts/Outfit-Light.woff2) format('woff2');
+}
+@font-face {
+    font-family: Outfit-exLit;
+    src: url(../fonts/Outfit-ExtraLight.woff2) format('woff2');
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: Outfit-lit;
+    background-image: url("../images/background.png");
+    background-size: 120rem 12rem;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.menu{
+    font-family: Outfit-lit;
+    padding: 1rem;
+    font-size: 1.25rem;
+    word-spacing: 1rem;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    z-index: 9999;
+    background-color: white;
+}
+
+.intro{
+    display: flex;
+    gap: 4rem;
+}
+
+.brief{
+    font-family: Outfit-lit;
+}
+
+.title{
+    font-family: Outfit-bold;
+}
