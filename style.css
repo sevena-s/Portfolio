@@ -35,17 +35,25 @@ body{
 
 .menu{
     font-family: Outfit-lit;
+    padding: 1rem;
     font-size: 1.25rem;
-    margin-left: auto;
     word-spacing: 1rem;
-    margin-left: 50rem;
+    position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+    z-index: 9999;
+    background-color: white;
+}
+
+.menu-link1{
+    margin-left: 60rem;
 }
 
 .intro{
     margin-left: 2rem;
-    max-width: 30rem;
-    line-height: 2.3rem;
-    font-size: 2rem;
+    max-width: 35rem;
+    line-height: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .name{
@@ -80,6 +88,7 @@ body{
     width: 50rem;
     height: 15rem;
     background-color: beige;
+    transition-duration: 0.5s;
 }
 
 .project-1{
@@ -117,4 +126,9 @@ body{
     font-family: Outfit-exLit;
     max-width: 30rem;
     font-size: 1.3rem;
+}
+
+.project-link:hover div, .project-link:focus div{
+    background-color: #f0f0f0;
+    transform: scale(1.03);
 }
