@@ -25,12 +25,22 @@ a{
 }
 
 body{
-    font-family: Outfit-lit;
-    background-image: url("../images/background.png");
+    font-family: Outfit-exLit;
+    background-image: url("../images/background2.png");
     background-size: 120rem 12rem;
     background-position: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+h1{
+    font-family: Outfit-lit;
 }
 
 .menu{
@@ -45,15 +55,61 @@ body{
     background-color: white;
 }
 
+.content{
+    margin: 3rem 5rem 9rem 5rem;
+    font-size: 1.25rem;
+}
+
 .intro{
     display: flex;
     gap: 4rem;
 }
 
 .brief{
-    font-family: Outfit-lit;
+    width: 40rem;
 }
 
 .title{
-    font-family: Outfit-bold;
+    font-family: Outfit-reg;
+}
+
+.details{
+    display: flex;
+    gap: 12rem;
+    margin-top: 2rem;
+}
+
+.research, .proposal, .prototype, .reflection{
+    margin: 3rem 7rem 0 7rem;
+}
+
+.research-img{
+    border-radius: 1rem;
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+}
+
+.links{
+    display: flex;
+    margin-top: 3rem;
+    gap: 5rem;
+    margin-left: 7rem;
+}
+
+.video{
+    background-image: url(../images/button1.png);
+    background-repeat: no-repeat;
+    background-size: 15rem 5rem;
+    width: 20rem;
+    height: 7rem;
+    transition-duration: 0.5s;
+}
+
+.link-text{
+    margin: 1.5rem 0 0 2rem;
+}
+
+.video:hover, .video:focus{
+    transform: scale(1.04);
+    color: #FFC667;
 }
