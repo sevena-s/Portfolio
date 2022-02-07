@@ -33,6 +33,10 @@ body{
     background-attachment: fixed;
 }
 
+.logo-link{
+    margin: 1% 0 1% 1%;
+}
+
 .logo{
     width: 6rem;
     height: 6rem;
@@ -63,6 +67,8 @@ body{
     font-family: Outfit-lit;
     font-size: 1.25rem;
     word-spacing: 1rem;
+    display: flex;
+    align-items: end;
     position: -webkit-sticky;
 	position: sticky;
 	top: 0;
@@ -70,12 +76,14 @@ body{
     background-color: white;
 }
 
-.menu-link1, .menu-link2{
-    padding-bottom: 3rem;
+.menu-link2{
+    margin-left: 80%;
+    margin-bottom: 1%;
+    transition-duration: 0.5s;
 }
 
-.menu-link1{
-    margin-left: 80%;
+.menu-link2:hover, .menu-link2:focus{
+    color: #F3B6B1;
 }
 
 .intro{
@@ -104,33 +112,18 @@ body{
     padding-top: 1rem;
 }
 
-/*.proj-list{
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    align-items: center;
-    margin-top: 4rem;
-}*/
 .proj-list{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-top: 7rem;
 }
 
-/*.project-1, .project-2, .project-3, .project-4{
-    border-radius: 1.5rem;
-    padding: 1rem;
-    width: 50rem;
-    height: 15rem;
-    background-color: beige;
-    transition-duration: 0.5s;
-}*/
 .project-1, .project-2, .project-3, .project-4{
     border-radius: 4rem;
     padding: 1rem;
     width: 32rem;
     height: 20rem;
-    margin-left: 4rem;
+    margin-left: 10%;
     transition-duration: 0.5s;
 }
 
@@ -191,4 +184,21 @@ body{
 .project-link:hover div, .project-link:focus div{
     background-color: #f0f0f0;
     transform: scale(1.03);
+}
+
+.contact{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    margin-left: 3rem;
+}
+
+.contact-links{
+    display: flex;
+    gap: 1rem;
+    transition-duration: 0.5s;
+}
+
+.social-link:hover, .social-link:focus{
+    color: #F3B6B1;
 }

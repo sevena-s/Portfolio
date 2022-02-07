@@ -26,11 +26,12 @@ a{
 
 body{
     font-family: Outfit-exLit;
-    background-image: url("../images/background2.png");
+    background-image: url("../images/jewelry-back.png");
     background-size: 120rem 12rem;
     background-position: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    max-width: 100%;
 }
 
 ul{
@@ -43,16 +44,57 @@ h1{
     font-family: Outfit-lit;
 }
 
+.logo-link{
+    margin: 1% 0 1% 1%;
+}
+
+.logo{
+    width: 6rem;
+    height: 6rem;
+    background-image: url("../images/logo-back.png");
+    background-size: 6rem 6rem;
+    background-repeat: no-repeat;
+    transition-duration: 3s;
+}
+
+.logo-icon{
+    margin-top: 10%;
+    margin-left: 23%;
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.logo-link:hover div, .logo-link:focus div{
+    animation-name: rotate; 
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
 .menu{
     font-family: Outfit-lit;
-    padding: 1rem;
     font-size: 1.25rem;
     word-spacing: 1rem;
+    display: flex;
+    align-items: end;
     position: -webkit-sticky;
 	position: sticky;
 	top: 0;
     z-index: 9999;
     background-color: white;
+}
+
+.menu-link2{
+    margin-left: 80%;
+    margin-bottom: 1%;
+    transition-duration: 0.5s;
+}
+
+.menu-link2:hover, .menu-link2:focus{
+    color: #F3B6B1;
 }
 
 .content{
@@ -78,17 +120,17 @@ h1{
 }
 
 .proj-img1{
-    border-radius: 1.25rem;
-}
-
-.details{
-    display: flex;
-    gap: 12rem;
-    margin-top: 2rem;
+    border-radius: 1.25;
 }
 
 .branding{
     margin: 3rem 0 0 0;
+}
+
+.branding-content{
+    display: flex;
+    max-width: 67rem;
+    gap: 4rem;
 }
 
 .links{
@@ -99,7 +141,7 @@ h1{
 }
 
 .video{
-    background-image: url(../images/button2.png);
+    background-image: url(../images/button4.png);
     background-repeat: no-repeat;
     background-size: 15rem 5rem;
     width: 20rem;
@@ -108,10 +150,27 @@ h1{
 }
 
 .link-text{
-    margin: 1.5rem 0 0 2rem;
+    margin: 1.5rem 0 0 3.5rem;
 }
 
 .video:hover, .video:focus{
     transform: scale(1.04);
-    color: #FFC667;
+    color: #CB9E5B;
+}
+
+.contact{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    margin-left: 3rem;
+}
+
+.contact-links{
+    display: flex;
+    gap: 1rem;
+    transition-duration: 0.5s;
+}
+
+.social-link:hover, .social-link:focus{
+    color: #F3B6B1;
 }
