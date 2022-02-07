@@ -202,3 +202,36 @@ body{
 .social-link:hover, .social-link:focus{
     color: #F3B6B1;
 }
+
+@media(max-width: 77.5rem){
+
+    .proj-list{
+        grid-template-columns: 1fr;
+    }
+
+    .project-2{
+        margin-top: 9rem;
+    }
+    .proj-img1{
+        top: 10%;
+        left: 27rem;
+    }
+    .proj-img2{
+        top: 35%;
+        left: 27rem;
+    }
+    .proj-img3{
+        top: 62%;
+        left: 27rem;
+    }
+    
+    .proj-img4{
+        top: 87%;
+        left: 27rem;
+    }
+
+    body{
+        /* zoom: 75%; */
+    }
+
+}
