@@ -117,6 +117,11 @@ h1{
     font-family: Outfit-reg;
 }
 
+.proj-img1{
+    max-width: 25.9rem;
+    max-height: 18.6rem;
+}
+
 .photos{
     max-width: 100%;
     margin-left: 10rem;
@@ -125,6 +130,8 @@ h1{
 
 .Cphotos{
     border-radius: 1rem;
+    max-width: 56rem;
+    max-height: 31.8rem;
 }
 
 .photos-title{
@@ -150,6 +157,8 @@ h1{
     border-radius: 1rem;
     margin-left: 3rem;
     margin-top: 4rem;
+    max-width: 56rem;
+    max-height: 36.5rem;
 }
 
 .links{
