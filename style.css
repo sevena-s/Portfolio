@@ -38,10 +38,10 @@ body{
 }
 
 .logo{
-    width: 6rem;
-    height: 6rem;
+    width: 4rem;
+    height: 4rem;
     background-image: url("./images/logo-back.png");
-    background-size: 6rem 6rem;
+    background-size: 4rem 4rem;
     background-repeat: no-repeat;
     transition-duration: 3s;
 }
@@ -49,18 +49,6 @@ body{
 .logo-icon{
     margin-top: 10%;
     margin-left: 23%;
-}
-
-@keyframes rotate {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(360deg);}
-}
-
-.logo-link:hover div, .logo-link:focus div{
-    animation-name: rotate; 
-    animation-duration: 2s; 
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
 }
 
 .menu{
