@@ -11,76 +11,206 @@
 
 <body>
 
+    <!-- Nav Bar -->
     <nav class="menu">
-
         <a href="./index.html" class="logo-link">
             <div class="logo">
-                <img src="./images/logo.png" class="logo-icon" width="35" height="46">
+                <img src="./images/logo.png" class="logo-icon" width="35" height="46" alt="Link to homepage">
             </div>
         </a>
-        <a href="#projects" class="menu-link2">Projects</a>
+        <div class="menu-links">
+            <a href="#projects" class="menu-link2">Projects</a>
+            <a href="#about" class="menu-link2">About</a>
+        </div>
     </nav>
 
-    <div class="top-description">
-        <div class="intro">
-            <p><span class="name">Hi, I'm Sevena.</span> I’m a Computer Science + Interactive Arts & Technology Student
-                at Simon Fraser University.</p>
-                
-                
-        </div>
-        <div class="intro-more">
-            <p>My highlights: Web development & design, UX/UI design</p>
-        </div>
-    </div>
-
-    <div class="projects-content" id="projects">
-        <div class="proj-list">
-            <a href="./cloverdale.html" class="project-link">
-                <div class="project-1">
-                    <h2 class="proj-title">Cloverdale Paint UI/UX Design </h2>
-                    <p class="proj-intro">A group school project in collabration with Cloverdale Paint to design an
-                        online product selection wizard</p>
-                </div>
-                <img src="./images/project1.png" class="proj-img1" width="275" height="198"> 
-            </a>
-            <a href="./sketch.html" class="project-link">
-                <div class="project-2">
-                    <h2 class="proj-title">Etch-A-Sketch Web App </h2>
-                    <p class="proj-intro">Built a browser version of Etch-A-Sketch that allows users to draw, clear, and
-                        modify their grid size</p>
-                </div>
-                <img src="./images/project2.png" class="proj-img2" width="276" height="183.5">
-            </a>
-            <a href="./jewelry.html" class="project-link link3">
-                <div class="project-3">
-                    <h2 class="proj-title">Jewelry Ecommerce Site Design</h2>
-                    <p class="proj-intro">Currently designing and developing a mock product website to sell South-Asian
-                        jewelry</p>
-                </div>
-                <img src="./images/project3.png" class="proj-img3" width="276" height="170">
-            </a>
-            <a href="./movie.html" class="project-link link4">
-                <div class="project-4">
-                    <h2 class="proj-title">Animated Short Film </h2>
-                    <p class="proj-intro">Collaborated with four teammates to model and render an original animated
-                        short
-                        film in Maya</p>
-                </div>
-                <img src="./images/project4.png" class="proj-img4" width="276" height="175">
-            </a>
+    <div class="content">
+        <!-- Intro -->
+        <div class="heading-description">
+            <div class="intro">
+                <h1 class="name">Hi, I'm Sevena.</h1>
+                <h1 class="dev-text">I’m an aspiring Front-End Developer</h1>
+            </div>
+            <p class="intro-paragraph sub-title-text">I love to combine my passion for design and development to build seamless user
+                interfaces</p>
         </div>
 
+        <!-- About -->
+        <div class="about" id="about">
+            <div class="about-content">
+                <div class="profile-container">
+                    <div class="profile-wrapper">
+                        <img src="./images/profile-pic.png" class="profile-photo image"
+                            alt="a headshot profile photo of Sevena" width="3295" height="2892">
+                    </div>
+                </div>
+                <div class="about-description">
+                    <h2 class="titles-text">About me</h2>
+                    <p class="about-paragraph body-text">I’m a 4th year <span class="compsci-text">Computer Science</span> student
+                        with a minor in Interactive Art
+                        & Technology at Simon
+                        Fraser University. I’m an aspiring front-end developer that loves to build and design user
+                        interfaces.</p>
+                    <p class="about-paragraph body-text">Over the past year, I have gained experience with a variety of web
+                        development
+                        skills through my own self-learning and by taking courses at SFU. My most recent personal
+                        projects can be
+                        viewed on my <a href="https://github.com/sevena-s" class="git-link">Github.</a>
+                    </p>
+                    <div class="hobby-text">
+                        <p class="extra-about body-text">Aside from coding, I also love</p>
+                        <p class="body-text swap-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="toolbox">
+                <!-- ToolBox -->
+                <div class="tools-title">
+                    <h2 class="titles-text">My Toolbox</h2>
+                    <p class="sub-title-text">A list of some technologies I’ve learned to create web pages</p>
+                </div>
+                <div class="toolsbox-container">
+
+                    <div class="list-container">
+                        <div class="tools-list">
+                            <div class="tool-item">
+                                <div class="tool-wrapper">
+                                    <img src="./images/tech-logos/js-icon.png" class="image" width="559" height="559" alt="black and white javascript logo">
+                                </div>
+                                <p class="tool-text">Javascript</p>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-wrapper">
+                                    <img src="./images/tech-logos/figma-icon.png" class="image" width="559"
+                                        height="559" alt="black and white figma logo">
+                                </div>
+                                <p class="tool-text">Figma</p>
+                            </div>
+                        </div>
+
+                        <div class="tools-list">
+                            <div class="tool-item">
+                                <div class="tool-wrapper">
+                                    <img src="./images/tech-logos/html-icon.png" class="image" width="559" height="559" alt="black and white HTML logo">
+                                </div>
+                                <p class="tool-text">HTML</p>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-wrapper">
+                                    <img src="./images/tech-logos/git-icon.png" class="image" width="559" height="559">
+                                </div>
+                                <p class="tool-text">Git</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="list-container">
+                        <div class="tools-list">
+                            <div class="tool-item">
+                                <div class="tool-wrapper">
+                                    <img src="./images/tech-logos/css-icon.png" class="image" width="559" height="559" alt="black and white CSS logo">
+                                </div>
+                                <p class="tool-text">CSS</p>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-wrapper">
+                                    <img src="./images/tech-logos/responsive-icon.png" class="image" width="559"
+                                        height="559" alt="black and white icon of an ipad and iphone">
+                                </div>
+                                <p class="tool-text">Responsive Design</p>
+                            </div>
+                        </div>
+
+                        <div class="tools-list">
+                            <div class="tool-item">
+                                <div class="tool-wrapper">
+                                    <img src="./images/tech-logos/react-icon.png" class="image" width="559"
+                                        height="559" alt="black and white React.js logo">
+                                </div>
+                                <p class="tool-text">React</p>
+                            </div>
+                            <div class="tool-item">
+                                <div class="tool-wrapper">
+                                    <img src="./images/tech-logos/nodejs.png" class="image" width="559" height="559" alt="black and white Node.js logo">
+                                </div>
+                                <p class="tool-text">Node.js</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="projects" id="projects">
+            <div class="project-title-container">
+                <h2 class="titles-text">My Projects</h2>
+                <p class="sub-title-text">a selection of my recent projects</p>
+            </div>
+            <div class="projects-list">
+                <!-- Jewelry -->
+                <a href="./pages/jewelry.html" class="project-link project1">
+                    <div class="project-item1">
+                        <div class="project-text">
+                            <h3 class="titles-text">Jewelry Ecommerce Website</h3>
+                            <p class="sub-title-text">HTML - CSS - Figma - Git</p>
+                            <p class="body-text">A mock product website for a fictional company, Mornee, that sells
+                                traditional and trendy South-Asian jewelry
+                            </p>
+                        </div>
+                        <div class="project-img-wrapper">
+                            <img src="./images/jewelry-image.png" class="image" width="1307" height="868">
+                        </div>
+                    </div>
+                </a>
+                <!-- Etch -->
+                <a href="./pages/phonebook.html" class="project-link">
+                    <div class="project-item2">
+                        <div class="project-img-wrapper">
+                            <img src="./images/project3.png" class="image" width="1584" height="966">
+                        </div>
+                        <div class="project-text">
+                            <h3 class="titles-text">Phonebook React App</h3>
+                            <p class="sub-title-text">React - Node.js - MongoDB - Git</p>
+                            <p class="body-text">An online phonebook for users to create,
+                                delete and edit contacts
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Phonebook -->
+                    <a href="./pages/etch.html" class="project-link">
+                        <div class="project-item3">
+                            <div class="project-text">
+                                <h3 class="titles-text">Etch-A-Sketch Web App</h3>
+                                <p class="sub-title-text">Javascript - HTML - CSS - Figma - Git</p>
+                                <p class="body-text">A browser version of Etch-A-Sketch that allows
+                                    users to draw, clear and modify their grid size
+                                </p>
+                            </div>
+                            <div class="project-img-wrapper">
+                                <img src="./images/project2.png" class="image" width="1307" height="868">
+                            </div>
+                        </div>
+                    </a>
+            </div>
+        </div>
+
     </div>
-    <footer>
+
+    <!-- Footer -->
+    <footer class="foot">
         <div class="contact">
             <div class="contact-txt">
-                <h3>Feel free to reach me!</h3>
+                <h3 class="footer-title">Feel free to reach me!</h3>
                 <nav class="contact-links">
                     <a href="https://www.linkedin.com/in/sevenasandhu/" class="social-link">LinkedIn</a>
                     <a href="mailto: sevenas@sfu.ca" class="social-link">Email</a>
                 </nav>
             </div>
-            <img src="./images/cloudy.gif" width="123" height="107">
+            <div class="cloud-wrapper">
+                <img src="./images/cloudy.gif" class="image" width="453" height="436">
+            </div>
         </div>
     </footer>
 </body>
