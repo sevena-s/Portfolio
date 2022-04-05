@@ -65,6 +65,8 @@ body{
     flex-shrink: 0;
 }
 
+/* Classes for Different Fonts */
+
 .body-text{
     font-family: Outfit-exlit;
     font-size: 1.15rem;
@@ -90,25 +92,20 @@ body{
 
 .logo-link{
     margin: 1% 0 1% 1%;
+    transition-duration: 0.5s;
+}
+
+.logo-link:hover, .logo-link:focus{
+    transform: scale(1.2);
 }
 
 .logo{
-    width: 4rem;
-    height: 4rem;
-    background-image: url("./images/logo-back.png");
-    background-size: 4rem 4rem;
-    background-repeat: no-repeat;
-    transition-duration: 3s;
-}
-
-.logo-icon{
-    margin-top: 10%;
-    margin-left: 23%;
+    max-width: 4rem;
 }
 
 .menu{
     font-family: Jet-exLight;
-    font-size: 1.2rem;
+    font-size: 1rem;
     word-spacing: 1rem;
     display: flex;
     align-items: end;
@@ -124,14 +121,14 @@ body{
     margin-right: 4rem;
     margin-bottom: 1%;
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
 }
 
-.menu-link2{
+.menu-link{
     transition-duration: 0.5s;
 }
 
-.menu-link2:hover, .menu-link2:focus{
+.menu-link:hover, .menu-link:focus{
     color: #F3B6B1;
 }
 
@@ -144,7 +141,7 @@ body{
 /* Intro */
 
 .heading-description{
-    background-image: url("./images/background.png");
+    background-image: url("./images/home-page/background.png");
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -156,7 +153,7 @@ body{
 }
 
 .intro{
-    max-width: 70rem;
+    max-width: 60rem;
     line-height: 5rem;
 }
 
@@ -180,7 +177,7 @@ body{
     padding-bottom: 13rem;
     display: flex;
     flex-direction: column;
-    background-image: url("./images/tools-background.png");
+    background-image: url("./images/home-page/tools-background.png");
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -216,29 +213,24 @@ body{
     align-self: center;
 }
 
-.about-title{
-    margin-top: 0;
-    font-size: 1.3rem;
-    font-family: Jet-thin;
-}
-
 .about-paragraph{
     max-width: 40rem;
     margin-top: 0.75rem;
 }
 
+.compsci-text{
+    font-family: Outfit-reg;
+}
+
 .git-link{
     border-bottom: 1px solid black;
     transition-duration: 0.5s;
+    font-family: Outfit-lit;
 }
 
 .git-link:hover, .git-link:focus{
     color: #F3B6B1;
     border-bottom: 1px solid #F3B6B1;
-}
-
-.compsci-text{
-    font-family: Outfit-reg;
 }
 
 /* Text Animation */
@@ -265,6 +257,7 @@ body{
     animation: swap 10s infinite;
 }
 
+/* Reference: https://stackoverflow.com/questions/42236440/change-text-with-a-css3-animation */
 @keyframes swap {
     20%{
         content: "video games 🎮";
@@ -392,6 +385,12 @@ body{
     transition-duration: 0.5s;
 }
 
+.proj-img{
+    border-radius: 2rem;
+    border: 1px solid black;
+    border-radius: 2rem;
+}
+
 .project-link:hover div, .project-link:focus div{
     background-color: #f0f0f0;
     transform: scale(1.01);
@@ -400,38 +399,53 @@ body{
 /* Footer */
 
 .foot{
-    background-image: url("./images/footer-back.png");
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
+    background-color: #FAEBE7;
 }
 
 .contact{
     display: flex;
-    gap: 1rem;
-    padding-top: 5rem;
-    padding-bottom: 3rem;
-    margin-left: 3rem;
+    gap: 3rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+    justify-content: center;
 }
 
 .cloud-wrapper{
-    max-width: 7.5rem;
+    max-width: 6rem;
+    margin-top: 2rem;
 }
 
-.contact-links{
+.contact-text{
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-title{
+    font-size: 1.25rem;
+}
+
+.social-link{
     transition-duration: 0.5s;
+    border-bottom: 1px solid black;
+    font-family: Jet-exLight;
 }
 
 .social-link:hover, .social-link:focus{
     color: #F3B6B1;
+    border-bottom: 1px solid #F3B6B1;
 }
-
 
 /* Media */
 
 /* For Larger Screens */
+
+@media(min-width: 112rem){
+    .heading-description{
+        padding-bottom: 5rem;
+    }
+}
 
 @media(min-width: 90rem){
     .about-paragraph{
@@ -441,20 +455,11 @@ body{
     .profile-container{
         width: 40rem;
     }
-
-    .heading-description{
-        padding-bottom: 5rem;
-    }
-
 }
 
 /* For Small Screens */
 
 @media(max-width: 81rem){
-
-    .contact{
-        padding-bottom: 0;
-    }
 
     .hobby-text{
         flex-direction: column;
@@ -472,10 +477,6 @@ body{
 }
 
 @media(max-width: 54.5rem){
-
-    .cloud-wrapper{
-        max-width: 5.5rem;
-    }
 
     .heading-description{
         padding-bottom: 5rem;
@@ -548,7 +549,7 @@ body{
     }
 
     .about{
-        padding-bottom: 17rem;
+        padding-bottom: 6rem;
     }
 
 }
@@ -574,18 +575,8 @@ body{
         margin: 3.5rem 2rem 0 2rem;
     }
 
-    .cloud-wrapper{
-        max-width: 3rem;
-        align-self: flex-end;
-    }
-
     .footer-title, .social-link{
         font-size: 0.9rem;
-    }
-
-    .contact{
-        padding-bottom: 1rem;
-        margin-left: 1rem;
     }
 }
 
@@ -627,10 +618,6 @@ body{
         margin-top: 2rem;
     }
 
-    .about{
-        padding-bottom: 13rem;
-    }
-
     .body-text{
         font-size: 1rem;
     }
@@ -643,6 +630,10 @@ body{
         font-size: 1.5rem;
     }
 
+    .cloud-wrapper{
+        max-width: 4rem;
+    }
+
     .about-description, .project-title-container{
         margin-left: 1rem;
         margin-right: 1rem;
@@ -650,7 +641,7 @@ body{
 
     .menu-links{
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0.25rem;
         margin-right: 1rem;
         font-size: 0.9rem;
     }

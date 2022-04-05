@@ -1,6 +1,6 @@
 body{
-    background-image: url("../images/phone-back.png");
-    background-size: 120rem 12rem;
+    background-image: url("../images/phonebook-page/phone-back.png");
+    background-size: 200rem 12rem;
     background-position: bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
