@@ -437,6 +437,13 @@ body{
     border-bottom: 1px solid #F3B6B1;
 }
 
+.copywrite{
+    text-align: center;
+    font-family: Jet-exLight;
+    padding-bottom: 0.5rem;
+    font-size: 0.75rem;
+}
+
 /* Media */
 
 /* For Larger Screens */
